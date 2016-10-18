@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Survey</string>
+    <string name="question">Which holiday do you like better: Christmas or Thanksgiving?</string>
+    <string name="christmas_button">Christmas</string>
+    <string name="thanksgiving_button">Thanksgiving</string>
+    <string name="results_button">Click for Results</string>
+    <string name="reset_button">Reset</string>
+    <string name="continue_button">Continue</string>
+</resources>

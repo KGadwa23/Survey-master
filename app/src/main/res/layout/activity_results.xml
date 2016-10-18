@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.katrina.survey.ResultsActivity">
+
+
+    <Button
+        android:id="@+id/resultsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/results_button"/>
+
+    <LinearLayout
+        android:id="@+id/linearlayoutoutcomes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/resultsButton">
+
+
+        <TextView
+            android:id="@+id/christmasOutcome2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Christmas#"
+            />
+
+        <TextView
+            android:id="@+id/thanksgivingOutcome2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/christmasOutcome2"
+            android:text="Thanksgiving#"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/resultDirections"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Reset or Continue before clicking back."
+        />
+
+    <LinearLayout
+        android:id="@+id/resultResetlinearlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearlayoutoutcomes">
+
+
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reset_button"
+            android:layout_toRightOf="@id/resultsButton"/>
+
+        <Button
+            android:id="@+id/continueButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/continue_button"
+            android:layout_toRightOf="@id/resetButton"/>
+
+    </LinearLayout>
+
+</LinearLayout>

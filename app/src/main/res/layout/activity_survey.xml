@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.katrina.survey.SurveyActivity">
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/question" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question">
+
+    <Button
+        android:id="@+id/christmasButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/christmas_button"/>
+
+    <Button
+        android:id="@+id/thanksgivingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/thanksgiving_button"
+        android:layout_toRightOf="@id/christmasButton"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayoutoutcomes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearlayout">
+
+        <TextView
+            android:id="@+id/christmasOutcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/christmasButton"
+            />
+
+        <TextView
+            android:id="@+id/thanksgivingOutcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/christmasOutcome"
+            android:layout_below="@id/thanksgivingButton"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/resultResetlinearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearlayoutoutcomes">
+
+        <Button
+            android:id="@+id/resultsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/results_button"/>
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reset_button"
+            android:layout_toRightOf="@id/resultsButton"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
